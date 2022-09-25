@@ -46,11 +46,7 @@ header a:hover{
   font-weight: bold;
   font-size: 26px;
   color: #1da873;
-
-
 }
-
-
 
 /* -- Contenu -- */
 
@@ -79,6 +75,7 @@ header a:hover{
 
 .partie h2{
   padding-top: 1%;
+  text-decoration: underline;
 }
 
 .box1{
@@ -91,4 +88,26 @@ header a:hover{
   align-items: center;
 }
 
+.contenu a{
+  font-size: 22px;
+  color: black;
+  margin-left: 1%;
+  
+}
+
+.contenu a:visited{
+  color: black;
+}
+
+.contenu a:hover{
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.coord{
+  background-color: white;
+  color: black;
+  padding: 1%;
+  margin-left: 1% ;
+}
 
