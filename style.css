@@ -1,9 +1,13 @@
 /* -- Général -- */
 
 @font-face {
- font-family: "Roboto regular";
- src: url("font/Montserrat-Regular.ttf") format("truetype");
-        
+  font-family: "Roboto regular";
+  src: url("font/Blender-Pro-Bold.otf") format("truetype");
+  
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,50 +17,35 @@ body{
 
 /* -- Header -- */
 
-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.attached{
+  
+  /*position: fixed;*/
+  background-color: black;
+  width: 97%;
+  padding: 1%;
+  text-align: left;
 }
 
-header h1{
-  margin-left: 2%;
-  font-size: 25px;;
-}
-
-header nav{
-  margin-right: 6%;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-header a{
-  font-size: 25px;
-  color: black;
+.attached a{
+  margin-left: 1%;
+  margin-right: 1%;
   text-decoration: none;
-  padding: 0px 20px;
-
+  font-size: 35px;
+  color: #FCEE0A;
 }
 
-header a:visited{
-  color: black;
+.attached a:hover{
+  color: #02D8F3;
 }
 
-header a:hover{
-  font-weight: bold;
-  font-size: 26px;
-  color: #1da873;
-}
 
 /* -- Contenu -- */
 
-.titre{
-  margin: 8%;
-  padding: 1%;
-}
-
 .titre h1{
   font-size: 50px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -64,17 +53,25 @@ header a:hover{
   margin: 8%;
   padding: 1%;
   border-radius: 25px;
-  background-color: #4fa2c9;
+  background-color: #02D8F3;
   color: white;
 }
 
 .partie p{
-  padding-top: 1%;
-  font-size: 25px;
+  font-size: 20px;
+  color: black;
 }
 
 .partie h2{
-  padding-top: 1%;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+}
+
+.partie h3{
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
   text-decoration: underline;
 }
 
@@ -85,7 +82,21 @@ header a:hover{
 
 .contenu{
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+.contenu .projet{
+  background-color: #FCEE0A;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2%;
+  padding: 1%;
+
+  border-style: solid;
+  border-color: #FCEE0A;
+  border-radius: 20px;
+  
 }
 
 .contenu a{
@@ -101,8 +112,19 @@ header a:hover{
 
 .contenu a:hover{
   font-weight: bold;
-  font-size: 26px;
 }
+
+.contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.contact img{
+  width: 7%;
+  height: 7%;
+}
+
+
 
 .coord{
   background-color: white;
